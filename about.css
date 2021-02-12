@@ -1,0 +1,231 @@
+
+	box-sizing:border-box;
+}
+
+body{
+	margin:0;
+    padding:0;
+}
+
+/*Navbar Style*/
+img{
+    width:400px;
+    height: 90px;
+}
+
+.navbar {
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	background-color:#333;
+	color:white;
+}
+
+.brand-title {
+	font-size:1.5rem;
+	margin:.5rem;
+}
+
+.navbar-links ul {
+	margin: 0;
+	padding: 0;
+	display:flex;
+}
+
+.navbar-links li {
+	list-style:none;
+}
+
+.navbar-links li a {
+	text-decoration:none;
+	color:white;
+	padding:1rem;
+    display:block;
+    font-size: 20px;
+}
+
+.navbar-links li:hover {
+	background-color:#555;
+}
+
+
+
+
+.toggle-button{
+	position:absolute;
+	top:.75rem;
+	right:1rem;
+	display:none;
+	flex-direction:column;
+	justify-content:space-between;
+	width: 30px;
+	height:21px;
+	
+}
+
+.toggle-button .bar {
+	height:3px;
+	width:100%;
+	background-color:white;
+	border-radius:10px;
+}
+/*Navbar style ending*/
+
+
+/*Left Div style start*/
+.left{
+    background-color: rgb(183, 235, 203);
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(233, 208, 207, 0.81);
+    margin-top: 60px;
+    padding: 30px;
+    line-height: 30px;
+    transition: all .2s ease-in-out; 
+}
+.left:hover{
+    transform: scale(1.1);
+}
+
+
+/*Left Div style end*/
+
+/*right Div style start*/
+.right{
+    background-color: rgb(183, 235, 203);
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(233, 208, 207, 0.81);
+    margin-top: 60px;
+    padding: 30px;
+    line-height: 30px;
+    transition: all .2s ease-in-out; 
+}
+.right:hover{
+    transform: scale(1.1);
+}
+
+
+
+/*right Div style end*/
+
+
+/*contact page style*/
+.contact{
+    text-align: center;
+    margin-top: 60px;
+    height:50vh;
+}
+.linkedindiv{
+    float:left;
+    padding:20px;
+}
+.emaildiv{
+    float:right;
+    padding:20px
+}
+
+.in{
+    width:200px;
+    transition: all .2s ease-in-out; 
+}
+.in:hover{
+    transform: scale(1.2);
+}
+
+.mail{
+    width:200px;
+    height:140px
+    transition: all .2s ease-in-out; 
+}
+.mail:hover{
+    transform: scale(1.2);
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+    img{
+        width:90%;
+        margin:auto;
+    }
+
+    .contact{
+        height:70vh;
+    }
+
+    .in{
+        margin-bottom: 20px;
+    }
+
+
+	.toggle-button{
+		display:flex;
+	}
+	
+	.navbar-links{
+		display:none; 
+	}
+	
+	.navbar{
+		flex-direction:column;
+		align-items:flex-start;
+	}
+	
+	.navbar-links ul {
+		flex-direction:column;
+		width:100%;
+	}
+	
+	.navbar-links li {
+		text-align:center;
+	}
+	
+	.navbar-links li a {
+		padding:.5rem 1rem;
+	}
+	
+	.navbar-links.active{
+		display:flex;
+	}
+}

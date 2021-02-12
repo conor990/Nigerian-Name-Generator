@@ -1,0 +1,305 @@
+
+	box-sizing:border-box;
+}
+
+body{
+	margin:0;
+    padding:0;
+}
+
+/*Navbar Style*/
+.navbar {
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	background-color:#333;
+	color:white;
+}
+
+.brand-title {
+	font-size:1.5rem;
+	margin:.5rem;
+}
+
+.navbar-links ul {
+	margin: 0;
+	padding: 0;
+	display:flex;
+}
+
+.navbar-links li {
+	list-style:none;
+}
+
+.navbar-links li a {
+	text-decoration:none;
+	color:white;
+	padding:1rem;
+    display:block;
+    font-size: 20px;
+}
+
+.navbar-links li:hover {
+	background-color:#555;
+}
+
+
+
+
+.toggle-button{
+	position:absolute;
+	top:.75rem;
+	right:1rem;
+	display:none;
+	flex-direction:column;
+	justify-content:space-between;
+	width: 30px;
+	height:21px;
+	
+}
+
+.toggle-button .bar {
+	height:3px;
+	width:100%;
+	background-color:white;
+	border-radius:10px;
+}
+/*Navbar style ending*/
+
+.container{
+    background-color: rgb(53, 238, 124);
+    margin-top: 40px;
+    height:70vh;
+    border-radius: 20px;
+    box-shadow: 0 2px 12px rgba(233, 208, 207, 0.81);
+}
+
+/*Gender radio buttons code start*/
+#rbGirl{
+    margin-right: 10px;
+    margin-left: 30px;
+}
+#rbBoy{
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.genderRB{
+    text-align: center;
+    font-size: 30px;
+}
+/*Gender radio buttons code end*/
+
+/*Igbo and Yoruba radio buttons code Start*/
+#rbIgbo{
+    margin-left: 50%;
+    margin-top: 30px;
+}
+#rbYoruba{
+    margin-left: 40%;
+}
+.igboYor{
+    font-size: 30px;
+}
+/*Igbo and Yoruba radio buttons code end*/
+
+/*Hausa/fulani and Edo radio buttons code Start*/
+#rbHF{
+    margin-left: 50%;
+    margin-top: 30px;
+}
+#rbEdo{
+    margin-left: 40%;
+}
+.HFEdo{
+    font-size: 30px;
+}
+/*Hausa/fulani and Edo radio buttons code end*/
+
+/*Generate button code Start*/
+.buttondiv{
+    text-align:center;
+    margin-top:30px ;
+}
+button{
+    background-color: rgb(98, 94, 94);
+    border:3px solid white;
+    cursor: pointer;
+    transition:0.8s;
+    width:180px;
+    height:80px;
+    text-shadow: 1px 1px #030503;
+    color:rgb(255, 252, 228);
+    outline:none;
+    overflow: hidden;
+    position: relative;
+}
+button:after {
+    content: "";
+    background: #DCDBDA;
+    display: block;
+    position: absolute;
+
+    opacity: 0;
+    transition: all 0.8s
+  }
+button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+    background-color:white;
+  }
+  button:hover{
+    background-color: #f86d6d;
+    text-shadow: 1px 1px white;
+    color: black;
+    border:3px solid black;
+}
+/*Generate button code end*/
+
+/*Name Generated code Start*/
+#generate{
+    -webkit-text-stroke: 1px rgb(246, 244, 244);
+}
+.namediv{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 55px;
+}
+
+/*Name Generated code End*/
+
+
+img{
+    width:400px;
+    height: 90px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .col-sm-12{
+        text-align: center;
+    }
+    .col-sm-6{
+        text-align: center;
+    }
+
+    img{
+        width:90%;
+        margin:auto;
+    }
+
+    #rbIgbo{
+        margin-left: 50%;
+        margin-right: 50%;
+    }
+    #rbYoruba{
+        margin-left: 50%;
+        margin-right: 50%;
+    }  
+    #rbHF{
+        margin-left: 50%;
+        margin-right: 50%;
+    }
+    #rbEdo{
+        margin-left: 50%;
+        margin-right: 50%;
+    }
+
+    .namediv{
+        margin-top: 30px;
+        font-size: 50px;
+    }
+
+    .container{
+        height: 100vh;
+    }
+
+
+
+	.toggle-button{
+		display:flex;
+	}
+	
+	.navbar-links{
+		display:none; 
+	}
+	
+	.navbar{
+		flex-direction:column;
+		align-items:flex-start;
+	}
+	
+	.navbar-links ul {
+		flex-direction:column;
+		width:100%;
+	}
+	
+	.navbar-links li {
+		text-align:center;
+	}
+	
+	.navbar-links li a {
+		padding:.5rem 1rem;
+	}
+	
+	.navbar-links.active{
+		display:flex;
+	}
+}
